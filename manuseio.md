@@ -33,3 +33,8 @@
 
 - **$mod+semicolon**
   - *Orientação na Horizontal ou Vertical das Janelas*.
+
+# Zoom de Janelas
+
+- **$mod+F11 fullscreen toggle**.
+  - *Zoom na janela atual*.
