@@ -1,12 +1,14 @@
 # Comandos
 
+- **$mod+Return**
+  - *Abrir o terminal* 
 - **$mod+q kill**
   - *Fechar o aplicativo*. 
 - **$mod+d dmenu**
+  - *Abrir o Dmenu*.
 
 # Foco
 
-  - *Abrir o Dmenu*.
 - **$mod+Left = focus left**
   - *Focar à esquerda*.
 - **$mod+Right = focus right**
@@ -19,4 +21,10 @@
 # Mover Janelas com Foco
 
 - **$mod+Shift+Left = move left**
-  - *Mover a janela focada para à esquerda*. 
+  - *Mover a janela focada para à esquerda*.
+- **$mod+Shift+Right = move right**
+  - *Mover a janela focada para à direita*.
+- **$mod+Shift+Down = move down**
+  - *Mover a janela focada para baixo*.
+- **$mod+Shift+Up = move up**
+  - *Mover a janela focada para cima*.
