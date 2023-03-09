@@ -28,3 +28,8 @@
   - *Mover a janela focada para baixo*.
 - **$mod+Shift+Up = move up**
   - *Mover a janela focada para cima*.
+
+# Orientação de Direção 
+
+- **$mod+semicolon**
+  - *Orientação na Horizontal ou Vertical das Janelas*.
