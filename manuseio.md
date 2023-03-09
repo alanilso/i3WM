@@ -1,11 +1,11 @@
 # Comandos
 
 - **$mod+Return**
-  - *Abrir o terminal* 
-- **$mod+q kill**
-  - *Fechar o aplicativo*. 
+  - *Abrir o terminal*
 - **$mod+d dmenu**
-  - *Abrir o Dmenu*.
+  - *Abrir o Dmenu*. 
+- **$mod+q**
+  - *Fechar o aplicativo*. 
 
 # Foco
 
