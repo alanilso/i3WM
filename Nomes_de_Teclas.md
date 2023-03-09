@@ -5,3 +5,4 @@
 - **semicolon** = *Tecla Ponto&Vírgula*
 - **question** = *Tecla Interrogação*
 - **Control** = *Tecla Ctrl*
+- **Return** = *Tecla Enter*
