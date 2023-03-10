@@ -10,24 +10,24 @@
 # Foco
 
 - **$mod+Left**
-  - *Focar à esquerda*.
+  - *Em Foco à esquerda*.
 - **$mod+Right**
-  - *Focar à direita*.
+  - *Em Foco à direita*.
 - **$mod+Down**
-  - *Focar a baixo*.
+  - *Em Foco a baixo*.
 - **$mod+Up**
-  - *Focar à cima*. 
+  - *Em Foco à cima*. 
 
 # Mover Janelas com Foco
 
 - **$mod+Shift+Left**
-  - *Mover a janela focada à esquerda*.
+  - *Mover a janela em foco à esquerda*.
 - **$mod+Shift+Right**
-  - *Mover a janela focada à direita*.
+  - *Mover a janela em foco à direita*.
 - **$mod+Shift+Down**
-  - *Mover a janela focada a baixo*.
+  - *Mover a janela em foco a baixo*.
 - **$mod+Shift+Up**
-  - *Mover a janela focada a cima*.
+  - *Mover a janela em foco a cima*.
 
 # Orientação de Direção 
 
