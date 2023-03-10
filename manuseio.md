@@ -9,25 +9,25 @@
 
 # Foco
 
-- **$mod+Left = focus left**
+- **$mod+Left**
   - *Focar à esquerda*.
-- **$mod+Right = focus right**
+- **$mod+Right**
   - *Focar à direita*.
-- **$mod+Down = focus down**
+- **$mod+Down**
   - *Focar a baixo*.
-- **$mod+Up = focus up**
+- **$mod+Up**
   - *Focar à cima*. 
 
 # Mover Janelas com Foco
 
-- **$mod+Shift+Left = move left**
-  - *Mover a janela focada para à esquerda*.
-- **$mod+Shift+Right = move right**
-  - *Mover a janela focada para à direita*.
-- **$mod+Shift+Down = move down**
-  - *Mover a janela focada para baixo*.
-- **$mod+Shift+Up = move up**
-  - *Mover a janela focada para cima*.
+- **$mod+Shift+Left**
+  - *Mover a janela focada à esquerda*.
+- **$mod+Shift+Right**
+  - *Mover a janela focada à direita*.
+- **$mod+Shift+Down**
+  - *Mover a janela focada a baixo*.
+- **$mod+Shift+Up**
+  - *Mover a janela focada a cima*.
 
 # Orientação de Direção 
 
@@ -36,7 +36,7 @@
 
 # Zoom de Janelas
 
-- **$mod+F11 fullscreen toggle**.
+- **$mod+F11**.
   - *Zoom na janela atual*.
 
 # Mudar Layout do Container
