@@ -38,3 +38,8 @@
 
 - **$mod+F11 fullscreen toggle**.
   - *Zoom na janela atual*.
+
+# Mudar Layout do Container
+
+- **$mod+Shift+question**
+  - *Mudar para: (stacked, tabbed, toggle split)*
