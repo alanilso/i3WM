@@ -1,19 +1,19 @@
 set $mod Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font pango:monospace 8
+## Fontes ##
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+#font pango:monospace 8
+font pango:DejaVu Sans Mono 8
+
+## Lock ##
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
-
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+## Wireless ##
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -26,80 +26,70 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-#-------------------------------------------------------------------
+## Key Set Floating ##
+
 # Use Mouse+$mod to drag floating windows to their wanted position
-#floating_modifier $mod
-
+floating_modifier $mod
 # Atalho alternativo:
-floating_modifier Mod1
+#floating_modifier Mod1
 
-#-------------------------------------------------------------------
+## Terminal ##
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec alacritty
 
-#--- TRABALHOSO ----------------------------------------------------
+## Fechar Window & Apps ##
 
 # kill focused window
 #bindsym $mod+Shift+q kill
-
 # Basta isso...
 bindsym $mod+q kill
-#-------------------------------------------------------------------
+
+## Menu ##
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-#-------------------------------------------------------------------
+## Focus & Position ##
 
-# alternatively, you can use the cursor keys:
+# Change of focus window:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# alternatively, you can use the cursor keys:
+# Change of position window:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Desperdício ------------------
+## Orientations ##
 
-# split in horizontal orientation
+#split in horizontal orientation
 #bindsym $mod+h split h
-
-# split in vertical orientation
+#split in vertical orientation
 #bindsym $mod+v split v
-# -------------------------------------------
+##
 # Faz o mesmo que as duas teclas acima:
 bindsym $mod+semicolon split toggle
-# ----------------------------------------
 
-#---CONFUSÃO -----------------------------
+## Fullscreen ##
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-#--- DESPERDÍCIO ---------------------------------------
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+## Layout ##
 
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 # Faz o mesmo que as 3 teclas acima!
 bindsym $mod+Shift+question layout toggle all
 
-# Aproveitando, isso define o layout padrão do workspace...
-workspace_layout tabbed
+## Toggle tiling / floating ##
 
-# -------------------------------------------------------
-
-# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
@@ -110,6 +100,8 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+## Workspaces ##
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -148,43 +140,42 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+## Reload & Restart
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-#-----------------------------------------
+## Exit ##
+
 # De quebra, mudamos o $mod+shift+e...
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-#-----------------------------------------
 
-# --- DESPERDÍCIO --------------------------------------------
+## Resize ##
+
 # resize window (you can also use the mouse for that)
 #mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+#These bindings trigger as soon as you enter the resize mode
+#Pressing left will shrink the window’s width.
+#Pressing right will grow the window’s width.
+#Pressing up will shrink the window’s height.
+#Pressing down will grow the window’s height.
+#bindsym j resize shrink width 10 px or 10 ppt
+#bindsym k resize grow height 10 px or 10 ppt
+#bindsym l resize shrink height 10 px or 10 ppt
+#bindsym ccedilla resize grow width 10 px or 10 ppt
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-#        bindsym j resize shrink width 10 px or 10 ppt
-#        bindsym k resize grow height 10 px or 10 ppt
-#        bindsym l resize shrink height 10 px or 10 ppt
-#        bindsym ccedilla resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-#        bindsym Left resize shrink width 10 px or 10 ppt
-#        bindsym Down resize grow height 10 px or 10 ppt
-#        bindsym Up resize shrink height 10 px or 10 ppt
-#        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-#        bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#        bindsym $mod+r mode "default"
-#}
-#
+# same bindings, but for the arrow keys
+#bindsym Left resize shrink width 10 px or 10 ppt
+#bindsym Down resize grow height 10 px or 10 ppt
+#bindsym Up resize shrink height 10 px or 10 ppt
+#bindsym Right resize grow width 10 px or 10 ppt
+#back to normal: Enter or Escape or $mod+r
+#bindsym Return mode "default"
+#bindsym Escape mode "default"
+#bindsym $mod+r mode "default"
 #bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -200,14 +191,13 @@ bar {
         status_command i3blocks
 }
 
+## ATALHOS PERSONALIZADOS ##
 
-# ATALHOS PERSONALIZADOS
-
-## Google Chrome
+# Google Chrome
 bindsym $Mod+shift+b exec google-chrome
-## Thunar
+# Thunar
 bindsym $Mod+shift+f exec thunar
-## Pulseaudio
+# Pulseaudio
 bindsym $Mod+p exec pavucontrol
 ## Vlc
 bindsym $Mod+shift+v exec flatpak run org.videolan.VLC
