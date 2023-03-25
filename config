@@ -83,11 +83,7 @@ bindsym $mod+semicolon split toggle
 
 #---CONFUSÃO -----------------------------
 # enter fullscreen mode for the focused container
-#bindsym $mod+f fullscreen toggle
-
-# F11 é mais conhecido como 'fullscreen'
-bindsym $mod+F11 fullscreen toggle
-#-----------------------------------------
+bindsym $mod+f fullscreen toggle
 
 #--- DESPERDÍCIO ---------------------------------------
 # change container layout (stacked, tabbed, toggle split)
